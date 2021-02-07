@@ -1,0 +1,280 @@
+/* variables for color scheme */
+:root {
+    --primary-color: #0038B8;
+    --secondary-color: #fff;
+    --bg-color: #f0f0f0;
+}
+
+/* general page styling */
+body { 
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* header block styling */
+#header {
+background-color: var(--secondary-color);
+box-shadow: 0 10px 20px gray, 0 6px 6px;
+padding: 10px 10px 20px 10px;
+max-width: 70vw;
+margin: 50px auto;
+border-radius: 6px;
+}
+
+/* h1 style */
+h1 {
+    font-weight:800;
+    margin: 20px 0 30px 0;
+    font-size: 6vw;
+    text-align: center;
+    letter-spacing: 3vw;;
+}
+
+/* h2 style */
+h2 {
+    font-weight:800;
+    margin: 20px 0 20px 0;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+/* h3 style */
+h3 {
+    font-weight:800;
+    margin: 40px 0 20px 0;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+/* subheading styling */
+#subheading {
+    font-weight: 400;
+    text-align: center;
+    min-width: 12px;
+    font-size: 3vw;
+    letter-spacing: .1vw
+}
+
+/* change block image sits in */
+#img-div {
+    background-color: var(--secondary-color);
+    box-shadow: 0 10px 20px gray, 0 6px 6px;
+    padding: 10px 10px 20px 10px;
+    max-width: 90vw;
+    margin: 50px auto;
+    border-radius: 6px;
+    }
+
+    /* change image style */
+#image {
+    width: 85vw;
+    display: block;
+    margin: auto;
+    padding: 2vw 0 3vw 0;
+}
+
+/* change image caption styling */
+#img-caption {
+    font-weight: 400;
+    text-align: center;
+    font-size: 2vw;
+    letter-spacing: .1vw;
+    padding: 0 4vw 0 4vw;
+}
+
+/* update "About Eli Cohen" section - main text in the body */
+#tribute-info {
+    width: 80vw;
+    margin: auto;
+}
+
+
+/* update text style */
+p {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+/* link hover */
+a:hover {
+    color: var(--primary-color);
+}
+
+/* change style for the text with the link in the bottom */
+#bottom-link {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Footer box */
+footer {
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 0px gray, 0px 0px 12px;
+    padding: 10px 20px 30px 0px;
+    max-width: 100%;
+    height: auto;
+    margin: 50px 0 0 0;
+    border-radius: 6px;
+}
+
+#footer-all {
+    max-width: 100%px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
+}
+
+.footer-grid {
+    display: grid;
+    grid-gap: 0;
+}
+
+#footer2 {
+
+}
+
+/* footer text style */
+.footer-text {
+    padding: 0 20px 0 20px;
+    margin: 20px 0 0 0;
+    font-size: 1.8vw;
+}
+
+/* separator styling */
+hr { 
+    width: 38vw;
+    margin: 10px 20px -10px 20px;
+}
+
+#body-sep {
+    margin: auto;
+    margin-top: 55px;
+    margin-bottom: 40px;
+    border: 1 solid black;
+}
+
+
+/* style updates for smaller screens */
+@media (max-width: 550px) {
+    #subheading {
+        font-size: 4vw;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+    }
+
+    /* change the caption font size with media query */
+    @media (max-width: 700px) {
+        #img-caption {
+            font-size: 2.4vw;
+        }
+    }
+
+    /* change views from 900px and smaller */
+    @media (max-width: 900px) {
+        .footer-text {
+            font-size: 3vw;
+        }
+        hr {
+            width: 62vw;
+        }
+    }
+
+
+
+/* divider */
+
+.astrodivider {
+    margin:64px auto 40px auto;
+    width:400px; 
+    max-width: 100%;
+    position:relative;
+  }
+  
+  .astrodividermask { 
+      overflow:hidden; height:20px; 
+  }
+  
+  .astrodividermask:after { 
+        content:''; 
+        display:block; margin:-25px auto 0;
+        width:100%; height:25px;  
+          border-radius:125px / 12px;
+         box-shadow:0 0 8px #3c3c3c;
+  }
+  .astrodivider span {
+      width:50px; height:50px; 
+      position:absolute; 
+      bottom: 100%; margin-bottom:-25px;
+      left:50%; margin-left:-25px;
+      border-radius: 50%;
+     box-shadow:0 2px 4px #3c3c3c;
+      background: #3c3c3c;
+  }
+  .astrodivider i {
+      position:absolute;
+      top:4px; bottom:4px;
+      left:4px; right:4px;
+      border-radius:100%;
+      border:1px dashed white;
+      text-align:center;
+      line-height:40px;
+      font-style:normal;
+       color: white;
+  }
+
+
+
+
+/* Logo in footer */
+
+  
+  .svg-wrapper {
+    height: 60px;
+      margin: 0 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+  }
+  
+  .shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #3c3c3c;
+  }
+  
+  .text {
+    color: #3c3c3c;
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+    left: 50px;
+  }
+  
+  @keyframes draw {
+    0% {
+        stroke: #3c3c3c;
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -474;
+      stroke-width: 8px;
+    }
+    100% {
+        stroke-dasharray: 760;
+      stroke-dashoffset: 0;
+      stroke-width: 2px;
+    }
+  }
+  
+  .svg-wrapper:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: .5s draw forwards;
+  }

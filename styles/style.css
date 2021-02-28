@@ -7,7 +7,7 @@
 
 /* general page styling */
 body { 
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif,;
     background-color: var(--bg-color);
 }
 
